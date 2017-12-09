@@ -1,6 +1,13 @@
 
 
 // Semantic color scheme
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize'); 
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); 
+@import url('https://fonts.googleapis.com/css?family=Open Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto'); 
+
 $theme-colors: (
   primary: #007bff,
   secondary: #004EA3,
@@ -8,7 +15,7 @@ $theme-colors: (
   info: #00fbff,
   warning: #ffc107,
   danger: #dc3545,
-  light: #f8f9fa,
+  light: #d8d8d8,
   dark: #343a40
 );
 
@@ -34,8 +41,12 @@ $body-color-inverse: invert($body-color) !default;
 $link-color: #007bff;
 
 
-$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$headings-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+
+
+$font-family-base: Open Sans;
+
+$headings-font-family: Montserrat;
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-h1: 2.5 * $font-size-base;
@@ -52,6 +63,8 @@ $display4-size: 3.5 * $font-size-base;
 
 $border-radius: .25rem;
 
+
+$display-font-family: Roboto;
 
 @import 'bootstrap-4.0.0-beta.1';
 
@@ -101,3 +114,68 @@ body > * {
 .rounded {
   border-radius: 10px;
 }
+
+.roles {
+	 /* font-family: 'Orbitron';*/
+  font-family: 'Bungee';
+  font-size: 1.5rem;
+}
+
+.name {
+	font-family: 'Electrolize';
+	font-weight: bolder;
+  font-size: 1.5em;
+  margin-top: 3rem;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.no-border {
+	border: none !important;
+}
+
+
+/**
+ * Move bootstrap carousel controll arrow outside the contents.
+ */
+$carouselArrowWidth: 3em;
+.carousel-control {
+  width: $carouselArrowWidth;
+  .icon-prev, .icon-next, .glyphicon-chevron-left, .glyphicon-chevron-right {
+    margin: 0.2em;
+  }
+  .icon-prev, .glyphicon-chevron-left {
+    left: 0;
+  }
+  .icon-next, .glyphicon-chevron-right {
+    right: 0;
+  }
+}
+.carousel {
+  padding-left: $carouselArrowWidth + 0.5em;
+  padding-right: $carouselArrowWidth + 0.5em;
+}
+
+/**
+ * carousel control style
+ */
+.carousel-control {
+  opacity: 1;
+  color: #ccc;
+  text-shadow: none;
+  &.left, &.right {
+    background-image: none;
+  }
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #999;
+}
+.carousel {
+  height: 380px;
+}
+
