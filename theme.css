@@ -670,11 +670,11 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #007bff;
+  color: #d8d8d8;
   background-color: transparent;
   border-radius: 0; }
   .btn-link:hover {
-    color: #0056b3;
+    color: #b2b2b2;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -2809,11 +2809,11 @@ button.list-group-item-dark {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #d8d8d8;
   background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
-    color: #0056b3;
+    color: #b2b2b2;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #ddd; }
@@ -3150,12 +3150,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #d8d8d8;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
+    color: #b2b2b2;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -5608,36 +5608,3 @@ body > * {
 
 .no-border {
   border: none !important; }
-
-/**
- * Move bootstrap carousel controll arrow outside the contents.
- */
-.carousel-control {
-  width: 3em; }
-  .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-    margin: 0.2em; }
-  .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
-    left: 0; }
-  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
-    right: 0; }
-
-.carousel {
-  padding-left: 3.5em;
-  padding-right: 3.5em; }
-
-/**
- * carousel control style
- */
-.carousel-control {
-  opacity: 1;
-  color: #ccc;
-  text-shadow: none; }
-  .carousel-control.left, .carousel-control.right {
-    background-image: none; }
-
-.carousel-control:hover,
-.carousel-control:focus {
-  color: #999; }
-
-.carousel {
-  height: 380px; }
