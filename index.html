@@ -5,13 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+  <link rel="stylesheet" href="theme.css" type="text/css">
+</head>
 
 <body id="body" class="bg-dark text-white">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="init.js"></script>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 <title>Saad Shakil - Ruby on Rails Developer in Toronto, Ontario</title>
 <meta name="description" content="Experienced web developer based in Toronto, Ontario, Canada.">
 <meta name="keywords" content="Ruby-on-rails, ruby, rails, web, application, development, developer, toronto, ontario, programmer, programming, software, css3, html5, css, html, jquery, javascript, js, aws, gcp, heroku, cloud foundry, github, git, macos, bash, shell">
@@ -25,7 +31,7 @@
     <div class="row">
       <div class="col-md-12">
         <p class="roles text-center">Developer
-          <br> </p>
+          <br></p>
       </div>
     </div>
     <div class="row">
@@ -47,7 +53,7 @@
 </div>
 <div class="py-4">
   <div class="container">
-    <div class="row"> </div>
+    <div class="row"></div>
   </div>
 </div>
 <div class="py-3">
@@ -71,12 +77,12 @@
           <div class="carousel-inner" role="listbox">
             <div class="item carousel-item active text-center">
               <img class="d-block img-fluid w-75 mx-auto p-1" src="https://s3.amazonaws.com/saadshakil/Screen+Shot+2017-12-09+at+2.16.15+AM.png" data-holder-rendered="true">
-              <a class="h3 py-2" href="#section_case_2" id="link_case_1">Finance Tracker App</a>
+              <a class="h3 py-2" href="#section_case_1" id="link_case_1">Finance Tracker App</a>
               <p class="text-center">Explored AJAX, stock quotes, and bootstrap styling with stock_quote and a couple of bootstrap gems</p>
             </div>
             <div class="item carousel-item text-center">
               <img src="https://s3.amazonaws.com/saadshakil/Screen+Shot+2017-12-08+at+2.59.29+PM.png" atl="first slide" class="d-block img-fluid w-75 mx-auto p-1">
-              <a class="h3 py-2" href="#section_case_1" id="link_case_2">SAAS Project Management App</a>
+              <a class="h3 py-2" href="#section_case_2" id="link_case_2">SAAS Project Management App</a>
               <p class="text-center">Explored multi-tenancy with Milia gem</p>
             </div>
             <div class="item carousel-item text-center">
@@ -93,17 +99,20 @@
   </div>
 </div>
 <div class="iframe_div" id="section_case_1">
-  <iframe src="https://sshakil.github.io/finance-tracker/" class="w-100 h-100 no-border" style=""></iframe>
+  <iframe src="https://sshakil.github.io/finance-tracker/" class="w-100 h-100 no-border" onload="resizeIframe(this);">
+  </iframe>
 </div>
 <div class="iframe_div" id="section_case_2">
-  <iframe src="https://sshakil.github.io/saas-project-app/" class="w-100 h-100 no-border" style=""></iframe>
+  <iframe src="https://sshakil.github.io/saas-project-app/" class="w-100 h-100 no-border" onload="resizeIframe(this);">
+  </iframe>
 </div>
 <div class="iframe_div" id="section_case_3">
-  <iframe src="https://sshakil.github.io/photo-app/" class="w-100 h-100 no-border" style=""></iframe>
+  <iframe src="https://sshakil.github.io/photo-app/" class="w-100 h-100 no-border" onload="resizeIframe(this);">
+  </iframe>
 </div>
 <div class="py-4">
   <div class="container">
-    <div class="row"> </div>
+    <div class="row"></div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
