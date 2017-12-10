@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
 </head>
 
 <body id="body" class="bg-dark text-white">
@@ -13,8 +13,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="init.js"></script>
-<script>
-  function resizeIframe(obj) {
+<script type="text/javascript">
+  function resizeIframe(obj){
+    obj.style.height = 0;
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
 </script>
