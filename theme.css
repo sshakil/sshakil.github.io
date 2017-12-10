@@ -8117,3 +8117,8 @@ body > * {
 .no-border {
   border: none !important;
 }
+
+.nav-justified > li {
+  display: table-cell;
+  width: 1%
+}
