@@ -8118,7 +8118,13 @@ body > * {
   border: none !important;
 }
 
-.nav-justified > li {
-  display: table-cell;
-  width: 1%;
+.just {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.just > li {
+  flex: 1 auto;
+  text-align: center;
+  white-space: nowrap;
 }
