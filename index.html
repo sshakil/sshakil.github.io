@@ -18,6 +18,39 @@
     obj.style.height = 0;
     obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
   }
+
+  $(function () {
+  var $myIFRAME   = $(".iframe-class"),//unless this collection of elements changes over time, you only need to select them once
+      windowWidth = 0,//store windowWidth here, this is just a different way to store this data
+      innerHeight = $(document).height(),
+      outerHeight = $(window).height(),
+      resizeTimer = null;
+
+    function setIFrameSize() {
+      if ( outerHeight < innerHeight) {
+        console.log('The outside is now smaller than the inside')
+      } else {
+        console.log ('The outside is equal to or smaller than the inside')
+      }
+    }
+
+
+    $(window).resize(function () {
+
+      //only run this once per resize event, if a user drags the window to a different size, this will wait until they finish, then run the resize function
+      //this way you don't blow up someone's browser with your resize function running hundreds of times a second
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        //make sure to update windowWidth before calling resize function
+//        windowWidth = $(window).width();
+
+        setIFrameSize();
+
+      }, 75);
+
+    }).trigger("click");
+  });
+
 </script>
 <title>Saad Shakil - Ruby on Rails Developer in Toronto, Ontario</title>
 <meta name="description" content="Experienced web developer based in Toronto, Ontario, Canada.">
@@ -94,9 +127,9 @@
     </div>
   </div>
 </div>
-<iframe id="section_case_1" src="https://sshakil.github.io/finance-tracker/" class="w-100 no-border case-container" onload="resizeIframe(this);"></iframe>
-<iframe id="section_case_2" src="https://sshakil.github.io/saas-project-app/" class="w-100 no-border case-container" onload="resizeIframe(this);"></iframe>
-<iframe id="section_case_3" src="https://sshakil.github.io/photo-app/" class="w-100 no-border case-container" onload="resizeIframe(this);"></iframe>
+<iframe id="section_case_1" src="https://sshakil.github.io/finance-tracker/" class="w-100 no-border" onload="resizeIframe(this);"></iframe>
+<iframe id="section_case_2" src="https://sshakil.github.io/saas-project-app/" class="w-100 no-border" onload="resizeIframe(this);"></iframe>
+<iframe id="section_case_3" src="https://sshakil.github.io/photo-app/" class="w-100 no-border" onload="resizeIframe(this);"></iframe>
 <div class="py-4">
   <div class="container">
     <div class="row"></div>

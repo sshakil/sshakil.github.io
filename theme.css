@@ -8129,7 +8129,3 @@ body > * {
   white-space: nowrap;
 }
 
-.case-container {
-  resize: both;
-  overflow: auto;
-}
