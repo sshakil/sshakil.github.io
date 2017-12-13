@@ -8128,3 +8128,8 @@ body > * {
   text-align: center;
   white-space: nowrap;
 }
+
+.case-container {
+  resize: both;
+  overflow: auto;
+}
