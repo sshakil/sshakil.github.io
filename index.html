@@ -23,7 +23,7 @@
   var $myIFRAME   = $(".iframe-class"),//unless this collection of elements changes over time, you only need to select them once
       windowWidth = 0,//store windowWidth here, this is just a different way to store this data
       innerHeight = window.frames[0].innerHeight,
-      outerHeight = window.frames[0].document.documentElement.scrollHeight
+      outerHeight = window.frames[0].document.documentElement.scrollHeight,
       resizeTimer = null;
 
     function setIFrameSize() {
