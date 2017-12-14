@@ -30,7 +30,7 @@
         console.log('i: ' + i)
         console.log('frameElement.style.height: ' + window.frames[i].frameElement.style.height )
         console.log('document.body.scrollHeight: ' + window.frames[i].document.body.scrollHeight )
-        window.frames[i].frameElement.style.height = window.frames[i].document.body.scrollHeight
+        window.frames[i].frameElement.style.height = window.frames[i].document.body.scrollHeight + 'px'
 
         console.log('after being set, frameElement.style.height: ' + window.frames[i].frameElement.style.height)
       }
