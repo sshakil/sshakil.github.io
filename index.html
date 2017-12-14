@@ -31,10 +31,9 @@
 
       if ( outerHeight < innerHeight) {
         console.log('The outside is now smaller than the inside. outerHeight:' + outerHeight + ', innerHeight: ' + innerHeight)
-        console.log('iframe.style.height: ' + iframe1.style.height)
+        iframe1.frameElement.style.height = outerHeight
       } else {
         console.log ('The outside is equal to or smaller than the inside, outerHeight:' + outerHeight + ', innerHeight: ' + innerHeight)
-        console.log('iframe.style.height: ' + iframe1.style.height)
       }
     }
 
