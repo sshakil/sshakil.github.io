@@ -27,15 +27,20 @@
     function setIFrameSize() {
       var iframe1 = window.frames[0]
       var iframeHeight = iframe1.innerHeight,
-          contentHeight = iframe1.document.documentElement.scrollHeight
+          contentHeight = iframe1.document.documentElement.scrollHeight,
+          bodyHeight = iframe1.document.body.scrollHeight
 
-      if ( contentHeight > iframeHeight) {
-        console.log('The content is now larger than the iframe. contentHeight:' + contentHeight + ', iframeHeight: ' + iframeHeight)
-        iframe1.frameElement.style.height = contentHeight + 'px';
-        console.log('Just set the iframe height to: ' + iframe1.frameElement.style.height)
-      } else {
-        console.log ('The content is equal to or smaller than the iframe, contentHeight:' + contentHeight + ', iframeHeight: ' + iframeHeight)
-      }
+      console.log ('iframeHeight: ' + iframeHeight)
+      console.log ('contentHeight: ' + contentHeight)
+      console.log ('bodyHeight: ' + bodyHeight)
+
+//      if ( contentHeight > iframeHeight) {
+//        console.log('The content is now larger than the iframe. contentHeight:' + contentHeight + ', iframeHeight: ' + iframeHeight)
+//        iframe1.frameElement.style.height = contentHeight + 'px';
+//        console.log('Just set the iframe height to: ' + iframe1.frameElement.style.height)
+//      } else {
+//        console.log ('The content is equal to or smaller than the iframe, contentHeight:' + contentHeight + ', iframeHeight: ' + iframeHeight)
+//      }
     }
 
 
