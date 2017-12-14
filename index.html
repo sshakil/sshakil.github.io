@@ -26,11 +26,13 @@
     function setIFrameSize() {
 //      var iframe1 = window.frames[0]
       var i = 0;
+      var scrollHeight;
       for (; i < window.frames.length; i++) {
         console.log('i: ' + i)
         console.log('frameElement.style.height: ' + window.frames[i].frameElement.style.height )
         console.log('document.body.scrollHeight: ' + window.frames[i].document.body.scrollHeight )
-        window.frames[i].frameElement.style.height = window.frames[i].document.body.scrollHeight + 'px'
+        scrollHeight = window.frames[i].document.body.scrollHeight + 'px'
+        window.frames[i].frameElement.style.height = scrollHeight
 
         console.log('after being set, frameElement.style.height: ' + window.frames[i].frameElement.style.height)
       }
