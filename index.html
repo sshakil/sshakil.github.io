@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+  <link rel="stylesheet" href="theme.css" type="text/css">
+</head>
 </head>
 
 <body class="bg-dark text-white" id="body">
@@ -20,23 +21,25 @@
   }
 
   $(function () {
-    var $myIFRAME   = $(".iframe-class"),//unless this collection of elements changes over time, you only need to select them once
-        windowWidth = 0,//store windowWidth here, this is just a different way to store this data
-        resizeTimer = null;
+    var resizeTimer = null;
 
     function setIFrameSize() {
-      var iframe1 = window.frames[0]
-      var iframeHeight = iframe1.innerHeight,
-          contentHeight = iframe1.document.documentElement.scrollHeight,
-          bodyHeight = iframe1.document.body.scrollHeight
-
-      console.log ('iframeHeight: ' + iframeHeight)
-      console.log ('contentHeight: ' + contentHeight)
-      console.log ('bodyHeight: ' + bodyHeight)
-      console.log ('-')
-
-      iframe1.frameElement.style.height = bodyHeight + 'px'
-
+//      var iframe1 = window.frames[0]
+      var i = 0;
+      for (; i < window.frames.length; i++) {
+        window.frames[i].frameElement.style.height = window.frames[i].document.body.scrollHeight
+      }
+//      var iframeHeight = iframe1.innerHeight,
+//          contentHeight = iframe1.document.documentElement.scrollHeight,
+//          bodyHeight = iframe1.document.body.scrollHeight
+//
+//      console.log ('iframeHeight: ' + iframeHeight)
+//      console.log ('contentHeight: ' + contentHeight)
+//      console.log ('bodyHeight: ' + bodyHeight)
+//      console.log ('-')
+//
+//      iframe1.frameElement.style.height = bodyHeight + 'px'
+//
 //      if ( contentHeight > iframeHeight) {
 //        console.log('The content is now larger than the iframe. contentHeight:' + contentHeight + ', iframeHeight: ' + iframeHeight)
 //        iframe1.frameElement.style.height = contentHeight + 'px';
