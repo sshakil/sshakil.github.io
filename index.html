@@ -25,13 +25,16 @@
         resizeTimer = null;
 
     function setIFrameSize() {
-      var innerHeight = window.frames[0].innerHeight,
-          outerHeight = window.frames[0].document.documentElement.scrollHeight
-      
+      var iframe1 = window.frames[0]
+      var innerHeight = iframe1.innerHeight,
+          outerHeight = iframe1.document.documentElement.scrollHeight
+
       if ( outerHeight < innerHeight) {
         console.log('The outside is now smaller than the inside. outerHeight:' + outerHeight + ', innerHeight: ' + innerHeight)
+        console.log('iframe.style.height: ' + iframe1.style.height)
       } else {
         console.log ('The outside is equal to or smaller than the inside, outerHeight:' + outerHeight + ', innerHeight: ' + innerHeight)
+        console.log('iframe.style.height: ' + iframe1.style.height)
       }
     }
 
