@@ -8136,36 +8136,59 @@ body > * {
 
 
 
-/* Base Navigation Styles for Desktop */
+/* Base styles for the body and resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #333; /* Assuming this is the desired background color */
+    padding: 20px;
+}
+
+/* Navigation styles using CSS Grid for layout */
 .nav {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    flex-direction: row; /* Default to horizontal layout */
-    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for all but the last item */
+    grid-gap: 10px;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 50px; /* Increased margin for more space below nav on mobile */
 }
 
 .nav-item {
-    margin: 0 10px; /* Horizontal spacing between items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Mobile Specific Adjustments */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        margin-bottom: 20px; /* Add bottom margin on mobile */
-    }
-
-    .nav-item {
-        width: 100%;
-        margin: 10px 0; /* Vertical spacing between items */
-    }
-
-    .container {
-        padding: 20px; /* Reduced padding for mobile */
-    }
-}
-
-/* General adjustments if items are still too spaced out */
 .nav-link {
-    padding: 8px 15px; /* Adjust padding around links */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.fa {
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.nav-item:last-child {
+    grid-column: 1 / -1; /* Last item takes full width */
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .nav {
+        grid-template-columns: repeat(5, 1fr); /* Adjusted to 5 columns for desktop */
+        margin-bottom: 30px; /* Less margin for desktop */
+    }
+
+    .nav-item:last-child {
+        grid-column: auto; /* Resets the last item to not span full width on desktop */
+    }
 }
