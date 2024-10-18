@@ -8132,47 +8132,40 @@ body > * {
 }
 
 
-/* Ensuring more space around elements */
+
+
+
+
+/* Base Navigation Styles for Desktop */
 .nav {
-    margin-bottom: 30px; /* Increase bottom margin for nav */
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center-align items for consistency */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: row; /* Default to horizontal layout */
+    padding-bottom: 20px;
 }
 
 .nav-item {
-    margin: 10px 0; /* Add top and bottom margin to each nav item */
+    margin: 0 10px; /* Horizontal spacing between items */
 }
 
-.container {
-    padding: 50px 15px; /* Increase padding inside the container */
-    min-height: 100vh; /* Minimum height to ensure it covers the viewport */
-}
-
-.nav-link {
-    padding: 10px; /* Increase padding around nav links for better tap targets */
-    display: block; /* Ensure links take full available space */
-    width: 100%; /* Ensure full width to avoid crowding */
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
     .nav {
-        flex-direction: column; /* Confirm stacking vertically in mobile view */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin on mobile */
     }
 
     .nav-item {
-        width: 100%; /* Full width to utilize space */
-        text-align: center; /* Ensure center alignment */
+        width: 100%;
+        margin: 10px 0; /* Vertical spacing between items */
     }
 
     .container {
-        padding-top: 60px; /* More padding at the top */
+        padding: 20px; /* Reduced padding for mobile */
     }
 }
 
-/* Specific element adjustments */
-.header {
-    margin-bottom: 20px; /* Add space below the header */
+/* General adjustments if items are still too spaced out */
+.nav-link {
+    padding: 8px 15px; /* Adjust padding around links */
 }
-
