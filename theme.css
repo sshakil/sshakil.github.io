@@ -10,6 +10,30 @@
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
+
+/* Additional CSS for Mobile Responsiveness and Spacing Adjustments */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-item {
+        width: 100%; /* Make nav items full width */
+        text-align: center; /* Center-align the text */
+    }
+
+    .container {
+        padding-top: 40px; /* Add more space at the top of the content */
+    }
+
+    .nav-link {
+        white-space: nowrap; /* Prevents the text in navigation links from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+
 .alert {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
