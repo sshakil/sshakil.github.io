@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +9,11 @@
     <link rel="stylesheet" href="theme.css" type="text/css">
     <title>Saad Shakil - Seasoned Software Engineer</title>
 </head>
-
 <body class="bg-dark text-white" id="body">
+
 <div>
     <div class="container">
+        <!-- Top menu and name section -->
         <div class="row">
             <div class="col-md-12" id="top">
                 <h1 class="name text-center">Saad Shakil</h1>
@@ -21,7 +21,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="roles text-center">Seasoned Software Engineer<br></p>
+                <p class="roles text-center">Software Engineer<br></p>
             </div>
         </div>
         <div class="row">
@@ -42,6 +42,42 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Table of Contents Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+                    <div class="container-fluid justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introduction">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Recent Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#leadership">Leadership Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#management">Engineering Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#industries">Industries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Recent Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ai-tools">AI Tools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#conclusion">Conclusion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -49,63 +85,70 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3>Introduction</h3>
-                <p>
-                    As a seasoned software engineer with over 10 years of experience in full-stack enterprise web systems development, I have contributed effectively to the design, development, deployment, and production support of robust and scalable solutions. My career has been shaped by a commitment to quality, a passion for problem-solving, and an effective understanding of both the technical and non-technical aspects of software engineering. I am excited to bring this experience to preferably a Team Lead or Senior Software Engineer role.
-                </p>
+                <h3 id="introduction">Introduction</h3>
+                <p>I am a Canadian software engineer with over 10 years of professional experience in full-stack enterprise web systems development. I have contributed effectively to the design, development, deployment, and production support of robust and scalable solutions. My career has been shaped by a commitment to quality, a passion for problem-solving, and an effective understanding of both the technical and non-technical aspects of software engineering. I am excited to bring this experience to a Software Engineer / Developer role.</p>
 
-                <h3>Industries</h3>
-                <p>
-                    I have worked across the high tech, government healthcare, finance including fintech, and startup industries, gaining a diverse set of skills, contexts, and insights that allow me to adapt and excel in various environments.
-                </p>
+                <h3 id="projects">Recent Projects</h3>
+                <p>My recent projects have further refined my full-stack development skills.</p>
+                <h5>Emotion Tracker</h5>
+                <p>A mood tracker CRUD demonstrator web app</p>
+                <ul>
+                    <li>ReactJS front-end</li>
+                    <li>3 versions of the backend in: RoR, Django, and Java Enterprise</li>
+                    <li>Multiple rounds of database normalization and optimized SQL queries balance performance with readability and maintainability.</li>
+                </ul>
 
-                <h3>Technical Expertise</h3>
-                <p>
-                    Throughout my career, I have developed and maintained a wide range of applications, from complex enterprise-level systems to fun pet projects. My expertise spans multiple programming languages and frameworks, including Ruby on Rails, ReactJS, and Django with Python. I have significant experience with containerization and cloud-native technologies including Docker, Kubernetes, and Cloud Foundry, as well as Infrastructure as Code tools such as Chef, Puppet, and Terraform. I have good experience with microservices architectures, including taking apart an existing monolith as well as creating new systems. Additionally, I have hands-on experience with logging and monitoring systems such as Sentry, Splunk, DataDog, LogDNA, and SumoLogic, ensuring the reliability and observability of the systems I build in today’s cloud-based environments.
-                </p>
+                <h3 id="leadership">Leadership Experience</h3>
+                <p>At Jiffy on Demand, I led a pair programming effort to implement a critical feature and provided mentorship to new hires, guiding them through the adoption of best practices. I continued this mentorship approach at Wave, where I provided technical guidance and support to my peers, ensuring that our work aligned with the company's goals.</p>
 
-                <h3>Pivotal</h3>
-                <p>
-                    At Pivotal (VMware), I gained hands-on experience working with cloud-native technologies. I rotated through four product sub-teams, contributing to the Pivotal Network team, which focused on a custom client-facing CDN; the Code Signing team, which implemented PGP for the authentication of distributable binaries; the Push Notification team for the platform's notification service; and the internal tooling Open-Source Licensing team for compliance. This experience has given me a strong foundation in application packaging, deployment, and configuration—skills that are essential for leading teams in today’s cloud-based environments.
-                </p>
+                <h3 id="management">Engineering Management</h3>
+                <p>Beyond my technical experience, I have also developed a strong foundation in engineering management through my Master’s in Engineering Management. Courses such as Managing Talent and Organizations, Leadership Skills, and Engineering Management have equipped me with the skills necessary for effective team leadership, conflict management, and collaborative decision-making. These conceptual learnings, combined with the intangibles I gained by often self-selecting for leadership needs in teams, such as collaborative leadership and conflict resolution, make me well-prepared to take on a leadership role in software engineering teams.</p>
+                <a href="#top" class="text-muted">Back to Top</a>
+                <br><br>
 
-                <h3>Wave Financial</h3>
-                <p>
-                    In my role at Wave Financial, I owned the development and maintenance of key features within the Payment Team, working with Python and Django to build and scale financial services applications. I operated in a cross-repo environment, often going above and beyond by contributing to other teams’ repos, including DevOps'. My work here closely parallels my experience with Ruby on Rails at Pivotal and Jiffy through the use of MVP-inspired frameworks as well as messaging systems, given the similarities between Python/Django and Ruby/Rails.
-                </p>
+                <h3 id="industries">Industries</h3>
+                <p>I have worked across the high-tech, government healthcare, finance including fintech, and startup industries, gaining a diverse set of skills, contexts, and insights that allow me to adapt and excel in various environments.</p>
 
-                <h3>Pet Project</h3>
-                <p>
-                    Additionally, my recent pet project using Ruby on Rails and ReactJS has further refined my full-stack development skills. I have explored various backend implementation approaches, performed multiple rounds of database normalization, and optimized SQL queries to balance performance with readability and maintainability.
-                </p>
+                <h3 id="experience">Recent Experience</h3>
+                <p>Throughout my career, I have developed and maintained a wide range of applications, from complex enterprise-level systems to fun pet projects. My expertise spans multiple programming languages and frameworks, including Ruby on Rails, ReactJS, and Django with Python. I have significant experience with containerization and cloud-native technologies including Docker, Kubernetes, and Cloud Foundry, as well as Infrastructure as Code tools such as Chef, Puppet, and Terraform. I have good experience with microservices architectures, including taking apart an existing monolith as well as creating new systems. Additionally, I have hands-on experience with logging and monitoring systems such as Sentry, Splunk, DataDog, LogDNA, and SumoLogic, ensuring the reliability and observability of the systems I build in today’s cloud-based environments.</p>
+                <a href="#top" class="text-muted">Back to Top</a>
+                <br><br>
 
-                <h3>AI Tools</h3>
-                <p>
-                    I have also embraced modern AI tools to enhance my productivity and code quality, experimenting with tools like GitHub Copilot, ChatGPT Plus, and JetBrains AI Assistant. These tools have allowed me to streamline my workflow through automating code creation for tasks of varying complexity and focus on delivering high-quality code.
-                </p>
+                <h4 id="pivotal" style="margin-left: 20px;">Pivotal</h4>
+                <p style="margin-left: 20px;">At Pivotal (VMware), I gained hands-on experience working with cloud-native technologies. I rotated through four product subteams, contributing to the Pivotal Network team, which focused on a custom client-facing CDN; the Code Signing team, which implemented PGP for the authentication of distributable binaries; the Push Notification team for the platform's notification service; and the internal tooling Open-Source Licensing team for compliance. This experience has given me a strong foundation in application packaging, deployment, and configuration—skills that are essential for leading teams in today’s cloud-based environments.</p>
 
-                <h3>Leadership Experience</h3>
-                <p>
-                    At Jiffy on Demand, I led a pair programming effort to implement a critical feature and provided mentorship to new hires, guiding them through the adoption of best practices. I continued this mentorship approach at Wave, where I provided technical guidance and support to my peers, ensuring that our work aligned with the company's goals.
-                </p>
+                <h4 id="wave" style="margin-left: 20px;">Wave Financial</h4>
+                <p style="margin-left: 20px;">In my role at Wave Financial, I owned the development and maintenance of key features within the Payment Team, working with Python and Django to build and scale financial services applications. I operated in a cross-repo environment, often going above and beyond by contributing to other teams’ repos, including DevOps'. My work here closely parallels my experience with Ruby on Rails at Pivotal and Jiffy through the use of MVP-inspired frameworks as well as messaging systems, given the similarities between Python/Django and Ruby/Rails.</p>
+                <a href="#top" class="text-muted">Back to Top</a>
+                <br><br>
 
-                <h3>Engineering Management</h3>
-                <p>
-                    Beyond my technical experience, I have also developed a strong foundation in engineering management through my Master’s in Engineering Management. Courses such as Managing Talent and Organizations, Leadership Skills, and Engineering Management have equipped me with the skills necessary for effective team leadership, conflict management, and collaborative decision-making. These conceptual learnings, combined with the intangibles I gained by often self-selecting for leadership needs in teams, such as collaborative leadership and conflict resolution, make me well-prepared to take on a leadership role in software engineering teams.
-                </p>
+                <h3 id="ai-tools">AI Tools</h3>
+                <p>I have also embraced modern AI tools to enhance my productivity and code quality, experimenting with tools like GitHub Copilot, ChatGPT Plus, and JetBrains AI Assistant. These tools have allowed me to streamline my workflow through automating code creation for tasks of varying complexity and focus on delivering high-quality code.</p>
 
-                <h3>Conclusion</h3>
-                <p>
-                    My blend of technical expertise, leadership experience, and passion for continuous learning through a self-driven growth mindset makes me a great fit for a Team Lead or Senior Software Engineer role. I am interested in contributing to an innovative team and helping drive success through high-quality engineering practices. My resume is available for your review, and I look forward to an opportunity to discuss how I can contribute to your organization.
-                </p>
+                <h3 id="conclusion">Conclusion</h3>
+                <p>My blend of technical expertise, leadership experience, and passion for continuous learning through a self-driven growth mindset makes me a great fit for a Team Lead or Senior Software Engineer role. I am interested in contributing to an innovative team and helping drive success through high-quality engineering practices. My resume is available for your review, and I look forward to an opportunity to discuss how I can contribute to your organization.</p>
+                <a href="#top" class="text-muted">Back to Top</a>
+                <br><br>
             </div>
         </div>
     </div>
 </div>
 
+<!-- JavaScript for smooth scrolling -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRg+jAibnjlvEMzUnQyo2TzF+W3B66p/i1NGx+gA7" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka0HRKKaLHLf6d1DlYfMF9+n1xgVuFS3l14EBB/XT0VvD5d+8kZKDPhcs9C+vjKT" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-</body>
+<script>
+    $(document).ready(function(){
+        $('a.nav-link').click(function(event) {
+            event.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 70
+            }, 500);
+        });
+    });
+</script>
 
+</body>
 </html>
