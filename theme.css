@@ -4281,6 +4281,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 
 body {
+  padding-top: 0 !important;
   margin: 0;
   font-family: Open Sans;
   font-size: 1rem;
@@ -8140,7 +8141,16 @@ body > * {
 
 /* Padding adjustments */
 .pb-5 {
-  padding-bottom: 5rem !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 0rem !important;
+}
+
+.py-3 {
+  padding-top: 0 !important;
 }
 
 
@@ -8215,6 +8225,7 @@ body {
   /* Adjust padding for sections */
   .pb-5 {
     padding-bottom: 0 !important;
+    margin-bottom: 3rem !important;
   }
 }
 
