@@ -50,36 +50,21 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-dark bg-dark mb-3">
+                    <!-- Toggle button only for mobile screens -->
                     <button class="navbar-toggler" type="button" id="tocToggle" aria-controls="tocNavbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                        Table of Contents
+                        Contents
                     </button>
-                    <div class="collapse" id="tocNavbar">
+                    <div class="navbar-collapse" id="tocNavbar">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#introduction">Introduction</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Recent Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#leadership">Leadership Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#management">Engineering Management</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#industries">Industries</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experience">Recent Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#ai-tools">AI Tools</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#conclusion">Conclusion</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Recent Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#leadership">Leadership Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#management">Engineering Management</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience">Recent Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#ai-tools">AI Tools</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -175,13 +160,7 @@
 <script>
     document.getElementById("tocToggle").addEventListener("click", function() {
         var tocNavbar = document.getElementById("tocNavbar");
-        if (tocNavbar.classList.contains("collapse")) {
-            tocNavbar.classList.remove("collapse");
-            tocNavbar.classList.add("show");
-        } else {
-            tocNavbar.classList.add("collapse");
-            tocNavbar.classList.remove("show");
-        }
+        tocNavbar.classList.toggle("show");
     });
 </script>
 <script>
