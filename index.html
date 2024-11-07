@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="pb-5">
+            <div class="pb-5" style="margin-bottom: 5rem">
                 <ul class="nav nav-pills align-self-end navbar-center justify-content-center">
                     <li class="nav-item" id="linkedin">
                         <a class="nav-link" href="https://www.linkedin.com/in/saadshakil/"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
@@ -49,9 +49,13 @@
         <!-- Table of Contents Section -->
         <div class="row">
             <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-                    <div class="container-fluid justify-content-center">
-                        <ul class="navbar-nav">
+                <nav class="navbar navbar-dark bg-dark mb-3">
+                    <button class="navbar-toggler" type="button" id="tocToggle" aria-controls="tocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        Table of Contents
+                    </button>
+                    <div class="collapse" id="tocNavbar">
+                        <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#introduction">Introduction</a>
                             </li>
@@ -88,18 +92,43 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 id="introduction">Introduction</h3>
-                <p>I am a Canadian software engineer with over 10 years of professional experience in full-stack enterprise web systems development. I have contributed effectively to the design, development, deployment, and production support of robust and scalable solutions. My career has been shaped by a commitment to quality, a passion for problem-solving, and an effective understanding of both the technical and non-technical aspects of software engineering. I am excited to bring this experience to a Software Engineer / Developer role.</p>
+                <h3 id="introduction">Intro</h3>
+                <p>I am a Canadian software engineer with 10 years of professional experience in full-stack enterprise web systems development.</p>
+
+                <p>I am currently actively looking for a Software Engineer / Developer role.</p>
 
                 <h3 id="projects">Recent Projects</h3>
                 <p>My recent projects have further refined my full-stack development skills.</p>
-                <h5>Emotion Tracker</h5>
-                <p>A mood tracker CRUD demonstrator web app</p>
-                <ul>
-                    <li>ReactJS front-end</li>
-                    <li>3 versions of the backend in: RoR, Django, and Java Enterprise</li>
-                    <li>Multiple rounds of database normalization and optimized SQL queries balance performance with readability and maintainability.</li>
-                </ul>
+                <div style="margin-left: 20px;">
+                    <h5>
+                        <a href="https://github.com/sshakil/emotion-tracker" target="_blank" style="text-decoration: none; color: inherit;">
+                            Emotion Tracker <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em;"></i>
+                        </a>
+                    </h5>
+                    <p>A mood tracker CRUD demonstrator web app</p>
+                    <ul style="padding-left: 20px; margin-top: 0;">
+                        <li>Frontend: ReactJS, Redux, Thunk</li>
+                        <li>Backend: 3 version: RoR, Django, and Java Enterprise</li>
+                        <li>Database: PostgreSQL</li>
+                        <li>Multiple rounds of database normalization and optimized SQL queries balance performance with readability and maintainability.</li>
+                    </ul>
+                    <table style="margin-left: 0; border-collapse: collapse;">
+                        <tr>
+                            <td style="text-align:left; padding-right: 10px;">
+                                <a href="https://github.com/sshakil/emotion-tracker" target="_blank">
+                                    <img src="UI-Log.png" alt="Log Interface" style="width:100%; max-width:300px;">
+                                </a>
+                            </td>
+                            <td style="text-align:left;">
+                                <a href="https://github.com/sshakil/emotion-tracker" target="_blank">
+                                    <img src="UI-Track.png" alt="Track Interface" style="width:100%; max-width:300px;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br><br>
 
                 <h3 id="leadership">Leadership Experience</h3>
                 <p>At Jiffy on Demand, I led a pair programming effort to implement a critical feature and provided mentorship to new hires, guiding them through the adoption of best practices. I continued this mentorship approach at Wave, where I provided technical guidance and support to my peers, ensuring that our work aligned with the company's goals.</p>
@@ -141,6 +170,20 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRg+jAibnjlvEMzUnQyo2TzF+W3B66p/i1NGx+gA7" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka0HRKKaLHLf6d1DlYfMF9+n1xgVuFS3l14EBB/XT0VvD5d+8kZKDPhcs9C+vjKT" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+<!-- Custom JavaScript for TOC Toggle -->
+<script>
+    document.getElementById("tocToggle").addEventListener("click", function() {
+        var tocNavbar = document.getElementById("tocNavbar");
+        if (tocNavbar.classList.contains("collapse")) {
+            tocNavbar.classList.remove("collapse");
+            tocNavbar.classList.add("show");
+        } else {
+            tocNavbar.classList.add("collapse");
+            tocNavbar.classList.remove("show");
+        }
+    });
+</script>
 <script>
     $(document).ready(function(){
         $('a.nav-link').click(function(event) {

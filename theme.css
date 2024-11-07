@@ -8179,30 +8179,46 @@ body {
     grid-column: 1 / -1;
 }
 
+.pb-5 {
+  padding-bottom: 0 !important;
+}
+
+
 @media (min-width: 768px) {
-    .nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 20px;
-    }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
 
-    .nav-item {
-        margin: 0 15px;
-        white-space: nowrap;
-    }
+  .nav-item {
+    margin: 0 15px;
+    white-space: nowrap;
+  }
 
-    .nav-item:first-child {
-        margin-left: 0;
-    }
+  .nav-item:first-child {
+    margin-left: 0;
+  }
 
-    .nav-item:last-child {
-        margin-right: 0;
-    }
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  /* Show the TOC as expanded on larger screens and hide the toggle button */
+  #tocToggle {
+    display: none;
+  }
+  #tocNavbar {
+    display: block !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .py-3 {
-        padding-top: 7rem !important;
-    }
+  /*.py-3 {*/
+  /*  padding-top: 1rem !important;*/
+  /*}*/
+  .pb-5 {
+    padding-bottom: 5rem !important;
+  }
 }
